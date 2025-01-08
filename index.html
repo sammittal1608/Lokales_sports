@@ -4,14 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lokales Landing Page</title>
+    
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tank&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
     <header class="navbar">
         <img src="assets/images/logo.png" alt="Lokales Logo" class="nav-header">
-        <img src="assets/icons/hamburger.png" alt="Hamburger Menu" class="hamburger-icon">
+        <img src="assets/icons/hamburger.png" alt="Hamburger Menu" class="hamburger-icon" id="menu-toggle">
+        <nav class="hamburger-menu" id="hamburger-menu">
+            <button class="close-menu" id="menu-close">×</button>
+            <ul class="menu-list">
+                <li>Climbing</li>
+                <li>Surfskate</li>
+                <li>Parkour</li>
+                <li>Calistenia</li>
+                <li>Gym</li>
+            </ul>
+        </nav>
     </header>
+    
+
+      <script src="js/script.js"></script>
+      
 
     <!-- Hero Section -->
     <section class="hero">
@@ -36,6 +52,8 @@
     <!-- Information Section -->
    
 
+    
+    
     <!-- Test2 Section -->
     <div class="container-2">
         <div class="background-image"></div>
@@ -47,36 +65,45 @@
             <span>INNOVATIVE TECHNIQUES</span>
         </div>
         <div class="content-box">
+            <!-- Feature 1 -->
             <div class="feature">
                 <div class="feature-text">
                     <p>Our approach allows children to feel in control. We supervise carefully but without interference, giving them the chance to experience independence, build self-confidence, and create friendships in a natural environment.</p>
                 </div>
                 <div class="feature-image">
-                    <img src="assets/images/Feature Text - Image.png" alt="Build Self-Confidence">
+                    <img src="assets/images/test2/Features Image.png" alt="Feature Image 1">
+                    <img src="assets/images/test2/Silhuette.png" alt="Silhouette 1" class="silhouette">
+                    <h2>BUILD SELF-CONFIDENCE</h2>
                 </div>
             </div>
-
+    
             <!-- Feature 2 -->
             <div class="feature reverse-alternate">
                 <div class="feature-text">
                     <p>We provide a safe environment where children can move freely, unaware that they’re being watched. This way, they grow in independence, trust their abilities, and build connections naturally.</p>
                 </div>
                 <div class="feature-image">
-                    <img src="assets/images/Feature Text - Image2.png" alt="Safe Environment">
+                    <img src="assets/images/test2/Features Image2.png" alt="Feature Image 2">
+                    <img src="assets/images/test2/Silhuette2.png" alt="Silhouette 2" class="silhouette">
+                    <h2>SAFE ENVIRONMENT</h2>
                 </div>
             </div>
-
+    
             <!-- Feature 3 -->
             <div class="feature">
                 <div class="feature-text">
                     <p>At Lokales, we believe in giving children the space to explore and discover at their own pace. They’re supervised with care, but without feeling it, allowing them to experience freedom, build confidence, and form meaningful friendships.</p>
                 </div>
                 <div class="feature-image">
-                    <img src="assets/images/Feature Text - Image3.png" alt="Explore and Discover">
+                    <img src="assets/images/test2/Features Image3.png" alt="Feature Image 3">
+                    <h2>EXPLORE & DISCOVER</h2>
                 </div>
             </div>
         </div>
     </div>
+    
+    
+    
 
     <!-- Test3 Section -->
     <div class="container">
@@ -85,75 +112,122 @@
         <img src="assets/images/Climbing Holds2.png" alt="Hold2" class="climbing-hold hold2">
         <img src="assets/images/Climbing Holds3.png" alt="Hold3" class="climbing-hold hold3">
         <img src="assets/images/Climbing Holds4.png" alt="Hold4" class="climbing-hold hold4">
-
+    
         <!-- Ripped Paper -->
         <img src="assets/images/Ripped Paper.png" alt="Paper" class="ripped-paper">
-        <img src="assets/images/Paper.png" alt="Paper" class="Paper">
-
-        <img src="assets/images/Illustration.png" alt="Paper" class="illu">
-
-        <img src="assets/images/Paper Doddle.png" alt="Paper" class="doddle">
-
-
-
-        <!-- Activities Text -->
-        <img src="assets/images/Activities.png" alt="Activities" class="activities">
-
+        <img src="assets/images/Paper.png" alt="Paper" class="paper">
+    
+        <img src="assets/images/Illustration.png" alt="Illustration" class="illu">
+        <img src="assets/images/Paper Doddle.png" alt="Doodle" class="doddle">
+    
+        <!-- Activities -->
+        <div class="activities-section">
+            <div class="activity-text">
+                <span>CLIMBING</span>
+                <span>SURFSKATE</span>
+                <span>PARKOUR</span>
+                <span>CALISTENIA</span>
+                <span>GYM</span>
+            </div>
+            <div class="activity-icons">
+                <img src="assets/images/test3/Escalada-1 1.png" alt="Climbing Icon">
+                <img src="assets/images/test3/Escalada-12.png" alt="Surfskate Icon">
+                <img src="assets/images/test3/Escalada-13.png" alt="Parkour Icon">
+                <img src="assets/images/test3/Hover Arrow.png" alt="Gym Icon">
+            </div>
+        </div>
+    
         <!-- Images -->
         <img src="assets/images/Image - Medium.png" alt="Medium Image 1" class="image-medium medium1">
         <img src="assets/images/Image - Medium2.png" alt="Medium Image 2" class="image-medium medium2">
         <img src="assets/images/Image - Medium3.png" alt="Medium Image 3" class="image-medium medium3">
         <img src="assets/images/Image - Medium4.png" alt="Medium Image 4" class="image-medium medium4">
-
+    
         <!-- Silhouette -->
         <img src="assets/images/Image.png" alt="Silhouette" class="silhouette">
-
+    
         <!-- Description -->
         <div class="description">
             <p>
-                At Lokales, we believe that sports like skateboarding, parkour, climbing, and calisthenics are more than just physical activities—they’re tools for personal development. These sports challenge both mind and body, helping young people build skills like resilience, discipline, and problem-solving.
+                At Lokales, we believe that sports like skateboarding, parkour, climbing, and calisthenics are more than just physical activities—they’re powerful tools for personal development. These sports challenge both the mind and body, helping young people build essential life skills such as resilience, discipline, creativity, and problem-solving.
             </p>
         </div>
     </div>
+    
+  
 
     <!-- Test4 Section -->
-    <div class="pricing-container">
-        <div class="pricing-header">
-            <img src="assets/images/H2 Title Decoration.png" alt="Pricing Title" class="pricing-title">
-            <p class="pricing-description">Our job opportunities allow you to share your passion. Be part of our movement to transform generations of active enthusiasts.</p>
+   <div class="pricing-container">
+    <div class="pricing-header">
+        <div class="pricing-title">
+            <div class="pricing-header-text">
+                <div class="word">
+                    <span class="char">P</span>
+                    <span class="char">R</span>
+                    <span class="char">I</span>
+                    <span class="char">C</span>
+                    <span class="char">I</span>
+                    <span class="char">N</span>
+                    <span class="char">G</span>
+                </div>
+                <div class="pricing-header-background"></div>
+            </div>
+            <div class="circle-deco"></div>
         </div>
-        <div class="pricing-cards">
-            <div class="card">
-                <h2>EXCLUSIVE POINT PACK</h2>
-                <p>Book activities on days that suit you best.</p>
-                <img src="assets/images/book_button.png" alt="Book Button" class="book-button">
-            </div>
-            <div class="card">
-                <h2>FIXED TRAINING</h2>
-                <p>Enjoy monthly plans for long-term growth.</p>
-                <img src="assets/images/book_button.png" alt="Book Button" class="book-button">
-            </div>
-            <div class="card">
-                <h2>LOKALES SCHOLARSHIPS</h2>
-                <p>Develop friendships, confidence, and independence.</p>
-                <img src="assets/images/CTA Button - Purple.png" alt="CTA Button" class="book-button">
-            </div>
+
+        <p class="pricing-description">
+            Our job opportunities allow you to share your passion with a like-minded employee culture and work where you play.
+            Be part of our movement to transform generations of active enthusiasts. You'll improve your own skills, learn
+            something new, plus make plenty of memories and lasting friendships along the way. If you are interested in sharing
+            this adventure with us, we encourage you to check out our current job offers and apply today.
+        </p>
+    </div>
+
+    <div class="pricing-cards">
+        <div class="pattern-container"></div>
+        <div class="card">
+            <h2>EXCLUSIVE POINT PACK</h2>
+            <p>Book your favorite activities on the days and times that suit you best. Use your points to invite friends and enjoy
+                the experience together.</p>
+            <img src="assets/images/book_button.png" alt="Book Button" class="book-button">
+        </div>
+        <div class="card">
+            <h2>FIXED TRAINING</h2>
+            <p>If you prefer a stable routine, check out our monthly plans. The perfect option for those looking for a long-term
+                commitment!</p>
+            <img src="assets/images/book_button.png" alt="Book Button" class="book-button">
+        </div>
+        <div class="card">
+            <h2>LOKALES SCHOLARSHIPS 2025</h2>
+            <p>At Lokales, we believe every child deserves the opportunity to participate. Joining helps them develop friendships,
+                confidence, and independence. We want the Lokales experience to impact as many children as possible. That's why we
+                invite those who have never participated before to apply for our 2025 Scholarship.</p>
+            <img src="assets/images/CTA Button - Purple.png" alt="CTA Button" class="book-button">
         </div>
     </div>
+</div>
+
+  
     <!-- test5 -->
 
     <div class="background-container">
-        <!-- Blurred Transparent Overlay -->
-        <div class="overlay"></div>
-
-        <!-- Content Wrapper -->
+        <div class="overlay"></div> 
+    
         <div class="content-wrapper-5">
-            <!-- Groups Section -->
+    
             <div class="section groups">
                 <div class="row-content">
-                    <!-- Smaller Group Title and Description -->
                     <div class="small-group-content">
-                        <img src="assets/images/test5/Header.png" alt="Groups Title" class="small-title-image">
+                        <div class="groups-container">
+                            <div class="word">
+                                <span class="char">G</span>
+                                <span class="char">R</span>
+                                <span class="char">O</span>
+                                <span class="char">U</span>
+                                <span class="char">P</span>
+                                <span class="char">S</span>
+                            </div>
+                        </div>
                         <h2 class="section-header">AT LOKALES,</h2>
                         <p class="small-description">
                             We offer a customized group experience for teams, friends, or organizations looking to bond while mastering new sports together. 
@@ -166,189 +240,223 @@
                             the thrill of new adventures together!
                         </p>
                     </div>
-
-                    <!-- Large Groups Image -->
+    
                     <div class="large-image-content">
-                        <img src="assets/images/test5/Groups Image.png" alt="Groups Main Image" class="large-image">
+                        <div class="chessboard-background">
+                            <img src="assets/images/test5/Vector.png" alt="Groups Main Image" class="large-image">
+                            <div class="image-text-container">
+                                <span class="text-label teams">TEAMS</span>
+                                <span class="text-label friends">FRIENDS</span>
+                                <span class="text-label organizations">ORGANIZATIONS</span>
+                            </div>
+                        </div>
                     </div>
+                    
                 </div>
-
-                <!-- Button -->
+    
                 <div class="button-container">
                     <img src="assets/images/test5/book_hover.png" alt="Book Button" class="cta-button-img">
                 </div>
             </div>
-
-            <!-- Job Section -->
+    
             <div class="section jobs">
                 <div class="row-content reverse">
-                    <!-- Large Job Image -->
                     <div class="large-image-content">
-                        <img src="assets/images/test5/Job Image.png" alt="Job Main Image" class="large-image">
+                        <div class="chessboard-background"> 
+                            <img src="assets/images/test5/Job Image2.png" alt="Job Main Image" class="large-image">
+                        </div>
                     </div>
-
-                    <!-- Smaller Job Title and Description -->
+    
                     <div class="small-job-content">
-                        <img src="assets/images/test5/job title.png" alt="Job Title" class="job-title-image">
+                        <div class="job-container">
+                            <div class="word">
+                                <span class="char">J</span>
+                                <span class="char">O</span>
+                                <span class="char">B</span>
+                            </div>
+                        </div>
                         <h2 class="section-header">AT LOKALES,</h2>
                         <p class="small-description">
                             Explore job opportunities where your passion can meet purpose. Work in a dynamic environment that fosters growth, creativity, and 
-                            meaningful contributions. Join a like-minded team and play a role in shaping the future of action sports.
+                            meaningful contributions. Join a like-minded team and play a role in shaping the future of action sports. 
                         </p>
                         <p class="small-sub-description">
                             Embrace new challenges, build strong connections, and enjoy an environment where you can thrive professionally and personally.
                         </p>
                     </div>
                 </div>
-
-                <!-- Button -->
+    
                 <div class="button-container">
                     <img src="assets/images/test5/CTA Button - Orange.png" alt="Apply Button" class="cta-button-img">
                 </div>
             </div>
         </div>
     </div>
+    
+    
+      
+  
 
     <!-- test6 -->
 
     <section class="training-spot-section">
         <!-- Header with Logo and Skateboards -->
         <div class="header-container">
-          <img src="assets/images/test6/Lokales---curvas.png" alt="Lokales Logo" class="logo">
-          <img src="assets/images/test6/Skateboards.png" alt="Skateboards" class="skateboards">
+            <img src="assets/images/test6/Lokales---curvas.png" alt="Lokales Logo" class="logo">
+            <img src="assets/images/test6/Skateboards.png" alt="Skateboards" class="skateboards">
         </div>
     
         <!-- Climbing Section -->
         <div class="climbing-section">
-          <img src="assets/images/test6/Image.png" alt="Climbing Image" class="climbing-image">
+            <img src="assets/images/test6/Image.png" alt="Climbing Image" class="climbing-image">
         </div>
     
         <!-- Stones Section -->
         <div class="stones-section">
-          <img src="assets/images/test6/Climbing Holds.png" alt="Stone 1" class="stone stone-1">
-          <img src="assets/images/test6/Climbing Holds2.png" alt="Stone 2" class="stone stone-2">
-          <img src="assets/images/test6/Climbing Holds3.png" alt="Stone 3" class="stone stone-3">
+            <img src="assets/images/test6/Climbing Holds.png" alt="Stone 1" class="stone stone-1">
+            <img src="assets/images/test6/Climbing Holds2.png" alt="Stone 2" class="stone stone-2">
+            <img src="assets/images/test6/Climbing Holds3.png" alt="Stone 3" class="stone stone-3">
         </div>
     
         <!-- Mission Section -->
         <div class="mission-section">
-          <!-- Founder Info -->
-          <div class="mission-header">
-            <img src="assets/images/test6/Marcelo Image.png" alt="Marcelo" class="author-image">
-            <div class="author-details">
-              <h3>MARCELO</h3>
-              <p>Founder and Manager</p>
+            <!-- Founder Info -->
+            <div class="mission-header">
+                <img src="assets/images/test6/Marcelo Image.png" alt="Marcelo" class="author-image">
+                <div class="author-details">
+                    <h3>Marcelo</h3>
+                    <p>Founder and Manager</p>
+                </div>
             </div>
-          </div>
-          <!-- Mission Text -->
-          <p class="mission-text">
-            <span class="highlight-quote">
-                <img src="assets/images/test6/Quote.png" alt="Quote" class="Quote-image">
-            </span> MY PERSONAL MISSION IS TO MOTIVATE EVERYONE TO PURSUE WHAT THEY ARE PASSIONATE ABOUT.
-          </p>
+            <!-- Mission Text -->
+            <p class="mission-text">
+                <span class="highlight-quote">“</span> My personal mission is to motivate everyone to pursue what they are passionate about.
+            </p>
         </div>
-      </section>
+    </section>
+    
 
       <!-- test7 -->
 
       <section class="faq-section">
         <!-- Left Section -->
         <div class="faq-left">
-          <img src="assets/images/test7/Header.png" alt="FAQ Header" class="faq-title">
-          <p class="faq-description">
-            At Lokales, we are passionate about sharing our love for sports. We specialize in introducing people to skateboarding, climbing, parkour, and other activities. We believe that the key to a healthy lifestyle is regular and consistent practice. Here, we encourage you to discover new sports, surrounded by a community of like-minded individuals in an inspiring natural environment.
-          </p>
+            <div class="faq-title-container">
+                <div class="faq-container">
+                    <div class="word">
+                        <span class="char">F</span>
+                        <span class="char">A</span>
+                        <span class="char">Q</span>
+                    </div>
+                </div>
+            </div>
+            <p class="faq-description">
+                At Lokales, we are passionate about sharing our love for sports. We specialize in introducing people to skateboarding, climbing, parkour, and other activities. We believe that the key to a healthy lifestyle is regular and consistent practice. Here, we encourage you to discover new sports, surrounded by a community of like-minded individuals in an inspiring natural environment.
+            </p>
         </div>
     
         <!-- Right Section -->
         <div class="faq-right">
-          <div class="faq-wrapper">
-            <div class="faq-item">
-              <div class="faq-question" onclick="toggleFAQ(this)">
-                <span>How do I book an activity at Lokales?</span>
-                <img src="assets/images/test7/FAQ_Off_Icon.png" class="toggle-icon" alt="Toggle">
-              </div>
-              <div class="faq-answer">
-                <p>You can easily book your favorite activities online through our website. Simply select the activity, choose your preferred date and time, and complete your booking. You can also use our Exclusive Point Packs to secure your spot.</p>
-              </div>
-            </div>
+            <div class="faq-wrapper">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How do I book an activity at Lokales?</span>
+                        <img src="assets/images/test7/FAQ_Off_Icon.png" class="toggle-icon" alt="Toggle">
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can easily book your favorite activities online through our website. Simply select the activity, choose your preferred date and time, and complete your booking. You can also use our Exclusive Point Packs to secure your spot.</p>
+                    </div>
+                </div>
     
-            <div class="faq-item">
-              <div class="faq-question" onclick="toggleFAQ(this)">
-                <span>What are Exclusive Point Packs and how do they work?</span>
-                <img src="assets/images/test7/FAQ_Off_Icon.png" class="toggle-icon" alt="Toggle">
-              </div>
-              <div class="faq-answer">
-                <p>Exclusive Point Packs allow you to purchase sessions in advance at a discounted rate, securing your place in upcoming activities.</p>
-              </div>
-            </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What are Exclusive Point Packs and how do they work?</span>
+                        <img src="assets/images/test7/FAQ_Off_Icon.png" class="toggle-icon" alt="Toggle">
+                    </div>
+                    <div class="faq-answer">
+                        <p>Exclusive Point Packs allow you to purchase sessions in advance at a discounted rate, securing your place in upcoming activities.</p>
+                    </div>
+                </div>
     
-            <div class="faq-item">
-              <div class="faq-question" onclick="toggleFAQ(this)">
-                <span>Can I bring a friend to my booked session?</span>
-                <img src="assets/images/test7/FAQ_Off_Icon.png" class="toggle-icon" alt="Toggle">
-              </div>
-              <div class="faq-answer">
-                <p>Yes, you can bring a friend along. Ensure you both arrive on time for the session to enjoy the activity fully.</p>
-              </div>
-            </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can I bring a friend to my booked session?</span>
+                        <img src="assets/images/test7/FAQ_Off_Icon.png" class="toggle-icon" alt="Toggle">
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can bring a friend along. Ensure you both arrive on time for the session to enjoy the activity fully.</p>
+                    </div>
+                </div>
     
-            <div class="faq-item">
-              <div class="faq-question" onclick="toggleFAQ(this)">
-                <span>What is the difference between the two Lokales branches?</span>
-                <img src="assets/images/test7/FAQ_Off_Icon.png" class="toggle-icon" alt="Toggle">
-              </div>
-              <div class="faq-answer">
-                <p>Each branch offers unique activities and experiences tailored to its location and audience. Explore both to find your favorite!</p>
-              </div>
-            </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What is the difference between the two Lokales branches?</span>
+                        <img src="assets/images/test7/FAQ_Off_Icon.png" class="toggle-icon" alt="Toggle">
+                    </div>
+                    <div class="faq-answer">
+                        <p>Each branch offers unique activities and experiences tailored to its location and audience. Explore both to find your favorite!</p>
+                    </div>
+                </div>
     
-            <div class="faq-item">
-              <div class="faq-question" onclick="toggleFAQ(this)">
-                <span>Do I need prior experience to join a class or activity?</span>
-                <img src="assets/images/test7/FAQ_Off_Icon.png" class="toggle-icon" alt="Toggle">
-              </div>
-              <div class="faq-answer">
-                <p>No, all our activities are beginner-friendly and guided by experienced instructors.</p>
-              </div>
-            </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do I need prior experience to join a class or activity?</span>
+                        <img src="assets/images/test7/FAQ_Off_Icon.png" class="toggle-icon" alt="Toggle">
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, all our activities are beginner-friendly and guided by experienced instructors.</p>
+                    </div>
+                </div>
     
-            <div class="faq-item">
-              <div class="faq-question" onclick="toggleFAQ(this)">
-                <span>Can I cancel or reschedule my booking?</span>
-                <img src="assets/images/test7/FAQ_Off_Icon.png" class="toggle-icon" alt="Toggle">
-              </div>
-              <div class="faq-answer">
-                <p>Yes, you can cancel or reschedule your booking through your account on our website or by contacting our support team.</p>
-              </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can I cancel or reschedule my booking?</span>
+                        <img src="assets/images/test7/FAQ_Off_Icon.png" class="toggle-icon" alt="Toggle">
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can cancel or reschedule your booking through your account on our website or by contacting our support team.</p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
     
-      <script>
+    <script>
         function toggleFAQ(element) {
-          const answer = element.nextElementSibling;
-          const icon = element.querySelector('.toggle-icon');
-          if (answer.style.display === "block") {
-            answer.style.display = "none";
-            icon.src = "assets/images/test7/FAQ_Off_Icon.png";
-          } else {
-            answer.style.display = "block";
-            icon.src = "assets/images/test7/FAQ_On_Icon.png";
-          }
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('.toggle-icon');
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+                icon.src = "assets/images/test7/FAQ_Off_Icon.png";
+            } else {
+                answer.style.display = "block";
+                icon.src = "assets/images/test7/FAQ_On_Icon.png";
+            }
         }
-      </script>
+    </script>
+    
 
       <!-- test8 -->
 
       <div class="contact-section">
         <!-- Header -->
         <div class="header">
-            <img src="assets/images/test8/Header.png" alt="Contact Header">
+            <div class="contact-title-container">
+                <div class="contact-container">
+                    <div class="word">
+                        <span class="char">C</span>
+                        <span class="char">O</span>
+                        <span class="char">N</span>
+                        <span class="char">T</span>
+                        <span class="char">A</span>
+                        <span class="char">C</span>
+                        <span class="char">T</span>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- Content -->
+    
+        <!-- Content Wrapper -->
         <div class="content-wrapper-8">
             <!-- Form Section -->
             <div class="form-section">
@@ -363,7 +471,7 @@
                     </div>
                 </form>
             </div>
-
+    
             <!-- Map Section -->
             <div class="map-section">
                 <img src="assets/images/test8/Map.png" alt="Map">
@@ -388,11 +496,8 @@
                 </div>
             </div>
         </div>
-
-        <!-- Footer Section -->
-        
-
     </div>
+    
     <div class="footer">
         <div class="footer-illustration-wrapper">
             <img src="assets/images/test8/Footer Illustration.png" alt="Footer Illustration"

@@ -10,5 +10,11 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
                 block: 'start'
             });
         }
+
+        // Close the menu after click
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (mobileMenu.classList.contains('active')) {
+            mobileMenu.classList.remove('active');
+        }
     });
 });
